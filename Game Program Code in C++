@@ -16,6 +16,7 @@ int main(){
 	cout<< "玩家輸入 : ";
 	cin >> p ;
 	cout << endl;
+	clothes = true ;
 	if (p>5)
 	{
 		cout<< "-----error-----別亂穿-----error-----" << endl;
@@ -57,7 +58,7 @@ int main(){
 					cout << "玩家共贏 " << a << "場" << endl;
 					cout << "電腦共贏 " << b << "場" << endl;
 					cout << "玩家還剩 " << p << "件" << endl;
-					cout << "電腦還剩 " << q << "件" << endl << endl;
+					cout << "電腦還剩 " << q << "件" << endl << endl ;
 					cout << "==========================================="<< endl <<"你玩了 " << c << "場" << endl << endl;
 					validInput = false;
 					break;
@@ -119,12 +120,18 @@ int main(){
 			}
 			if(q==0)
 			{
-				cout << "電腦脫光了 " << "                    you win" << endl;
+				cout << endl <<"-------------------結束-------------------" << endl;
+				cout << "電腦脫光了 " << "                    you win" << endl << endl;
+				cout << "玩家共贏 " << a << "場" << endl;
+				cout << "電腦共贏 " << b << "場" << endl;				
 				break ;
 			}
 			else if(p==0)
 			{
-				cout << "玩家脫光了 " << "                    you lost" << endl;
+				cout << endl <<"-------------------結束-------------------" << endl;
+				cout << "玩家脫光了 " << "                    you lost" << endl << endl;
+				cout << "玩家共贏 " << a << "場" << endl;
+				cout << "電腦共贏 " << b << "場" << endl;				
 				break ;
 			}
 		} 
